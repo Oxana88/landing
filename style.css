@@ -72,12 +72,15 @@ video {
 	margin-top: 200px;
 	padding: 15px;
 	display: block;
-	font-family: Oswald, Impact, sans-serif;
+	font-family: 'Oswald', sans-serif;
 	font-size: 30px;
 	text-transform: uppercase;
-	font-weight: 200;
+	font-weight: 600;
 	color: rgba(255, 255, 255, 0.5);
 	transform: rotate(270deg);
+}
+.social:hover {
+	color: #fff;
 }
 video {
 	width: 100%;
@@ -87,7 +90,7 @@ video {
 button {
 	text-transform: uppercase;
 	font-size: 150px;
-	font-family: Oswald, Impact, sans-serif;
+	font-family: 'Oswald', sans-serif;
 	border-radius: 0;
 	padding: 180px 300px;
 	animation-iteration-count: 1;
@@ -378,6 +381,7 @@ svg.load {
 @media (max-width: 640px) {
 	button {
 		font-size: 25px;
+		padding: 50px 10px;
 	}
 	.menu .icon {
 		img {
@@ -390,10 +394,18 @@ svg.load {
 /* MOBILE */
 @media (max-width: 414px) {
 	.social {
+		font-weight: 400;
 		letter-spacing: 0.3rem;
 		margin-top: 130px;
 		padding: 5px;
 		font-size: 16px;
+	}
+	.menu {
+		background: linear-gradient(
+			5deg,
+			rgb(22 90 87) 51%,
+			rgb(41 72 76 / 72%) 87%
+		);
 	}
 	.menu .icon {
 		img {
@@ -437,6 +449,20 @@ svg.load {
 	}
 }
 @media (max-width: 320px) {
+	.menu .icon {
+		img {
+			width: 10px;
+			height: 10px;
+			padding: 0;
+		}
+	}
+	.social {
+		font-weight: 400;
+		letter-spacing: 0.3rem;
+		margin-top: 130px;
+		padding: 1px;
+		font-size: 13px;
+	}
 	@keyframes act {
 		0% {
 			width: 0;
