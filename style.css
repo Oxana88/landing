@@ -197,6 +197,7 @@ svg.load {
 	}
 }
 .rect1 {
+	width: 5%;
 	animation: rect1 2.5s ease-out;
 	animation-delay: 0.1s;
 	animation-iteration-count: 1;
@@ -240,5 +241,95 @@ svg.load {
 @keyframes draw {
 	100% {
 		stroke-dashoffset: 0;
+	}
+}
+/* MOBILE */
+@media (max-width: 414px) {
+	.social {
+		letter-spacing: 0.3rem;
+		margin-top: 130px;
+		padding: 5px;
+		font-size: 16px;
+	}
+	.menu .icon {
+		img {
+			width: 15px;
+			height: 20px;
+			padding: 2px;
+		}
+	}
+	button {
+		font-size: 50px;
+		padding: 80px 20px;
+	}
+	.btn,
+	.btn:focus {
+		text-shadow: none;
+	}
+	.rect1 {
+		width: 15%;
+		animation: rect1 2.5s ease-out;
+		animation-delay: 0.1s;
+		animation-iteration-count: 1;
+	}
+	@keyframes rect1 {
+		0% {
+			height: 0;
+			width: 15%;
+			x: 0;
+		}
+		40% {
+			height: 100%;
+			width: 15%;
+			x: 0;
+		}
+		65% {
+			height: 100%;
+			width: 100%;
+			x: 0;
+		}
+		100% {
+			height: 100%;
+			width: 100%;
+			x: 100%;
+		}
+	}
+}
+@media (max-width: 320px) {
+	@keyframes act {
+		0% {
+			width: 0;
+			height: 100%;
+			z-index: 400;
+			margin-left: 0;
+		}
+		60% {
+			width: 0;
+			height: 100%;
+			z-index: 400;
+			margin-left: 0;
+		}
+		80% {
+			width: 100%;
+			height: 100%;
+			z-index: 400;
+			margin-left: 0;
+		}
+		100% {
+			width: 100%;
+			height: 100%;
+			margin-left: calc(100vw);
+		}
+	}
+	button {
+		font-size: 35px;
+		padding: 60px 6px;
+	}
+
+	.btn,
+	.btn:focus {
+		background-color: #000000eb;
+		letter-spacing: 0.6rem;
+		line-height: 3.5rem;
 	}
 }
